@@ -63,8 +63,10 @@ void Menu::AddNewCrew(){
     if (sex_str == "М" || sex_str == "м" || sex_str == "M" || sex_str == "m")
     {
         sex = MyData::Sex::MALE;
+        std::cin.ignore(99999999, '\n');
     } else if(sex_str == "ж" || sex_str == "Ж")  {
         sex = MyData::Sex::FEMALE;
+        std::cin.ignore(99999999, '\n');
     } else{
         std::cin.clear();
         std::cin.ignore(99999999, '\n');
